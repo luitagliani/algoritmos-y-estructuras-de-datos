@@ -2,7 +2,7 @@
 
 Este proyecto es la implementación de un sistema de administración y búsqueda de vuelos desarrollado en **Go**. Permite gestionar rutas, consultar prioridades, buscar conexiones entre aeropuertos y administrar el historial de vuelos por rangos de fechas.
 
-## Funcionalidades Principales (Interfaz `Sistema`)
+## Funcionalidades Principales
 
 El sistema implementa una arquitectura basada en interfaces para garantizar un bajo acoplamiento. Las operaciones principales incluyen:
 
