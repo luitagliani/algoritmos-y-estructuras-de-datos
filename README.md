@@ -1,23 +1,26 @@
-# Trabajo práctico - sistema de análisis de redes aeroportuarias
+# Algoritmos y Estructuras de Datos
 
-Este proyecto es un sistema de análisis y optimización de rutas de vuelo desarrollado en **Python**. Utiliza **Teoría de Grafos** para modelar la red de aeropuertos y conexiones, permitiendo resolver problemas complejos de logística, rutas óptimas y análisis de importancia en la red.
+Este repositorio agrupa una serie de proyectos enfocados en el modelado de datos, la eficiencia algorítmica y la aplicación de la Teoría de Grafos para la resolución de problemas complejos. Las soluciones están desarrolladas en **Go** y **Python**.
 
-## ⚙️ Funcionalidades y Algoritmos Implementados
+# Estructura del Repositorio
 
-El sistema modela los datos a través de grafos pesados y dirigidos, implementando los siguientes algoritmos clásicos:
+El código está dividido en tres grandes módulos prácticos:
 
-* **Búsqueda de Rutas Óptimas:** Encuentra el vuelo más barato o el más rápido entre dos ciudades utilizando el algoritmo de **Dijkstra**.
-* **Minimización de Escalas:** Calcula la ruta con la menor cantidad de conexiones intermedias aplicando Búsqueda en Anchura (**BFS**).
-* **Análisis de Importancia:** Determina cuáles son los aeropuertos más cruciales de la red calculando la **Centralidad** del grafo y filtrando el top utilizando **Heaps (Colas de Prioridad)**.
-* **Planificación de Itinerarios:** Genera un recorrido lógico para visitar múltiples ciudades sin ciclos, utilizando **Orden Topológico**.
-* **Diseño de Nueva Aerolínea:** Calcula la red de rutas más económica que conecte todos los aeropuertos sin redundancias, implementando el algoritmo de **Prim (Árbol de Tendido Mínimo / MST)**.
-* **Exportación Geoespacial:** Permite exportar las rutas calculadas a formato `.kml` para su visualización en herramientas como Google Earth o Google Maps.
+### 1. TDAs (Go)
+Implementación desde cero de estructuras de datos fundamentales para el manejo eficiente de memoria y referencias.
+* **Estructuras incluidas:** Pilas (Stack), Listas Enlazadas y Diccionarios (Hash Maps).
+* 
+### 2. Sistema de Gestión de Vuelos (Go)
+Sistema de administración y búsqueda que maneja información temporal y colas de prioridad.
+* **Funcionalidades:** Registro de rutas, búsqueda del próximo vuelo disponible, filtrado por rangos de fechas y gestión de prioridades.
+* **Testing Automatizado:** Incluye un script de validación en **Bash** (`pruebas.sh`) que inyecta casos de prueba, compara salidas estándar (`stdout`/`stderr`) y captura excepciones de memoria.
 
-##Tecnologías y Arquitectura
-* **Lenguaje:** Python 3
-* **Estructuras de Datos:** Grafos (implementación propia), Heaps, Diccionarios.
-* **Manejo de Archivos:** Lectura de datasets en CSV y generación dinámica de archivos KML.
-
-## Uso del Sistema
-
-El sistema procesa bases de datos de aeropuertos y vuelos al inicializarse. Dependiendo de los comandos ingresados, el mapa de conexiones se evalúa por precio, tiempo o frecuencia para devolver la respuesta computacionalmente más eficiente.
+### 3. Análisis de Redes Aeroportuarias (Python)
+Sistema que modela una red de aeropuertos mediante grafos pesados y dirigidos para resolver problemas de logística.
+* **Algoritmos implementados:**
+  * Búsqueda de la ruta más rápida o barata (**Dijkstra**).
+  * Minimización de escalas entre destinos (**BFS**).
+  * Cálculo de los aeropuertos más críticos de la red (**Centralidad** utilizando Heaps).
+  * Planificación de itinerarios sin ciclos (**Orden Topológico**).
+  * Diseño de redes de bajo costo sin conexiones redundantes (**Prim / Árbol de Tendido Mínimo**).
+* **Visualización:** Exportación de las rutas calculadas a formato `.kml` para su representación geoespacial.
