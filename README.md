@@ -9,7 +9,6 @@ El código está dividido en tres grandes módulos prácticos:
 ### 1. TDAs (Go)
 Implementación desde cero de estructuras de datos fundamentales para el manejo eficiente de memoria y referencias.
 * **Estructuras incluidas:** Pilas (Stack), Listas Enlazadas y Diccionarios (Hash Maps).
-* 
 ### 2. Sistema de Gestión de Vuelos (Go)
 Sistema de administración y búsqueda que maneja información temporal y colas de prioridad.
 * **Funcionalidades:** Registro de rutas, búsqueda del próximo vuelo disponible, filtrado por rangos de fechas y gestión de prioridades.
