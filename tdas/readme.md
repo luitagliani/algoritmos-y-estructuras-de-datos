@@ -1,6 +1,6 @@
-# 🧱 Tipos de Datos Abstractos (TDAs) en Go
+# TDAs
 
-Este repositorio contiene la implementación desde cero de varios TDAs. El objetivo de este proyecto es profundizar en el modelado de datos, la eficiencia algorítmica y el manejo de referencias utilizando Go.
+El objetivo de este proyecto es profundizar en el modelado de datos, la eficiencia algorítmica y el manejo de referencias utilizando Go.
 
 ## 🛠️ Tecnologías y Herramientas
 * **Lenguaje:** Go
